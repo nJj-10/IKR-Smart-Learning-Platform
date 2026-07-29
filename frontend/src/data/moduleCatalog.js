@@ -1,0 +1,500 @@
+export const MODULE_CATALOG = [
+  {
+    "code": "IKR3013",
+    "sourceCode": "IKR3013",
+    "title": "Computer Hardware and Software",
+    "semester": "Semester 1",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Komponen Komputer",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Pengenalan Kepada Perkakasan Komputer",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Pengenalan Kepada Sistem Komputer",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Pengenalan Kepada Aplikasi Komputer",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t5",
+        "title": "Pengenalan Kepada Rekod Pemasangan Perkakasan Dan Sistem Komputer",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Asas perkakasan, perisian, komponen komputer dan rekod pemasangan.",
+    "featured": [
+      "CPU memproses arahan dan mengawal operasi sistem.",
+      "Motherboard menghubungkan komponen utama komputer.",
+      "RAM menyimpan data sementara untuk akses pantas.",
+      "Storan menyimpan sistem operasi dan fail secara kekal."
+    ],
+    "color": "blue"
+  },
+  {
+    "code": "IKR3023",
+    "sourceCode": "IKR3023",
+    "title": "Network Structured Cabling",
+    "semester": "Semester 1",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Kepada Rangkaian",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Pengenalan Kepada Perkakasan Rangkaian",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Pengenalan Kepada Pelan Rangkaian",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Pengenalan Kepada Pemasangan Kabel",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Topologi, struktur pengkabelan, kabel data, alatan dan prosedur penamatan.",
+    "featured": [
+      "Topologi menerangkan susunan fizikal atau logikal rangkaian.",
+      "Kabel UTP lazimnya terhad kepada 100 meter bagi satu pautan Ethernet.",
+      "T568B ialah salah satu standard susunan warna untuk penamatan RJ45.",
+      "Cable tester digunakan untuk memeriksa kesinambungan sambungan."
+    ],
+    "color": "emerald"
+  },
+  {
+    "code": "IKR3033",
+    "sourceCode": "IKR3033",
+    "title": "Fiber Cabling",
+    "semester": "Semester 1",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Kepada Fiber Optik",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Teknik Penyambungan Fiber Optik",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Pengenalan Kepada Pengujian Rangkaian Komputer",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Pengenalan Kepada Aktiviti Uji Kabel Secara Individu",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Fiber Cabling dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "cyan"
+  },
+  {
+    "code": "IKR3043",
+    "sourceCode": "IKR3043",
+    "title": "Computer Network Fundamental",
+    "semester": "Semester 1",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Kepada Pemasangan Rangkaian Berwayar",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Kaedah Kepada Pemadanan Peralatan Rangkaian Berwayar",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Pengenalan Kepada Pemasangan Rangkaian Tanpa Wayar",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Kaedah Kepada Pemadanan Rangkaian Tanpa Wayar",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t5",
+        "title": "Pengenalan Kepada Peranti Hujung Rangkaian",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t6",
+        "title": "Pengenalan Kepada Kaedah Pemadanan Peranti Hujung Rangkaian",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Computer Network Fundamental dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "indigo"
+  },
+  {
+    "code": "IKR3053",
+    "sourceCode": "IKR3053",
+    "title": "Wireless Technology",
+    "semester": "Semester 1",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Kepada Wireless Technology",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Pengenalan Kepada Antaramuka Wireless Point (AP)",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Kaedah Konfigurasi Wireless Point (AP)",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Pengenalan Kepada Transmitter Dan Receiver Sistem Wireless Point (AP)",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t5",
+        "title": "Pengenalan Kepada Extensible Authentication Protocol (EAP)",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Wireless Technology dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "violet"
+  },
+  {
+    "code": "IKR3063",
+    "sourceCode": "IKR3063",
+    "title": "Ethernet Switching Essentials",
+    "semester": "Semester 2",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Kepada Suis Rangkaian",
+        "ready": true,
+        "questionCount": 20
+      },
+      {
+        "id": "t2",
+        "title": "Kaedah Pensuisan Dalam Rangkaian",
+        "ready": true,
+        "questionCount": 20
+      },
+      {
+        "id": "t3",
+        "title": "Pengenalan Konfigurasi Asas Suis Rangkaian",
+        "ready": true,
+        "questionCount": 20
+      },
+      {
+        "id": "t4",
+        "title": "Pengenalan Kepada VLAN",
+        "ready": true,
+        "questionCount": 20
+      },
+      {
+        "id": "t5",
+        "title": "Sistem Operasi VLAN",
+        "ready": true,
+        "questionCount": 20
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Ethernet Switching Essentials dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "sky"
+  },
+  {
+    "code": "IKR3073",
+    "sourceCode": "IKR3073",
+    "title": "Basic Routing Configuration",
+    "semester": "Semester 2",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Kepada Penghala Rangkaian",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Kaedah Penghalaan Dalam Rangkaian",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Pengenalan Konfigurasi Asas Penghala Rangkaian",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Penjadualan Penghala Alamat IP",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t5",
+        "title": "Pengenalan Penghalaan Statik",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Basic Routing Configuration dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "amber"
+  },
+  {
+    "code": "IKR3083",
+    "sourceCode": "IKR3082",
+    "title": "Network Documentation",
+    "semester": "Semester 1",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Senarai Semak Pemasangan Perkakasan Peralatan Rangkaian Komputer",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Senarai Semak Konfigurasi Rangkaian Komputer",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Senarai Semak Rajah Rangkaian Komputer",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Prosedur Rekod Konfigurasi Rangkaian Komputer",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Network Documentation dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "slate"
+  },
+  {
+    "code": "IKR3093",
+    "sourceCode": "IKR3093",
+    "title": "Server Essentials",
+    "semester": "Semester 2",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Kepada Senibina Pelayan (Server Architecture)",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Pengenalan Kepada Pemasangan Dan Penyusunan Perkakasan Pelayan (Server)",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Kaedah Pengujian Komponen Hardware Server",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Pengenalan Kepada Perisian Sistem Operasi (OS) Server",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t5",
+        "title": "Pengenalan Pada Prosedur Instalasi Perisian Sistem Operasi (OS) Pelayan (Server)",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t6",
+        "title": "Pengujian Perisian Sistem Operasi (OS) Pelayan (Server)",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Server Essentials dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "rose"
+  },
+  {
+    "code": "IKR3103",
+    "sourceCode": "IKR3103",
+    "title": "Network Operating System",
+    "semester": "Semester 2",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Kepada Network Operating System (Linux)",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Pengenalan Kepada Web Server",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Pengenalan Kepada DNS Server",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Pengenalan Kepada DHCP Server",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t5",
+        "title": "Pengenalan Kepada Directory Server",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Network Operating System dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "teal"
+  },
+  {
+    "code": "IKR3113",
+    "sourceCode": "IKR3113",
+    "title": "Network Monitoring Services",
+    "semester": "Semester 2",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Pengenalan Kepada Network Monitoring System",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Sistem Operasi Network Monitoring System",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Simple Network Management Protocol (SNMP) Dalam NMS",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Pengenalan Kepada Network Attached Storage (NAS)",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t5",
+        "title": "Sistem Operasi Network Attached Storage (NAS) Dan Sistem RAID",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t6",
+        "title": "Pengurusan Network Attached Storage (NAS)",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Network Monitoring Services dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "lime"
+  },
+  {
+    "code": "IKR3133",
+    "sourceCode": "IKR3133",
+    "title": "Network Security Essentials",
+    "semester": "Semester 2",
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Perlaksanaan Sistem Firewall Dalam Rangkaian",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t2",
+        "title": "Konsep Asas Keselamatan Rangkaian Firewall",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t3",
+        "title": "Pengenalan Parameter Konfigurasi Firewall",
+        "ready": true,
+        "questionCount": 30
+      },
+      {
+        "id": "t4",
+        "title": "Pengenalan Kepada Rangkaian Firewall",
+        "ready": true,
+        "questionCount": 30
+      }
+    ],
+    "description": "Kandungan pembelajaran bagi Network Security Essentials dengan topik tersusun dan rekod kemajuan.",
+    "featured": [],
+    "color": "red"
+  }
+];
+
+export const getModule = (code) => MODULE_CATALOG.find((item) => item.code === code);

@@ -1,0 +1,17 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    "chat": {
+      "rooms": {
+        "$roomId": {
+          "messages": {
+            "$messageId": {
+              ".write": "auth != null && (!data.exists() || data.child('senderId').val() === auth.uid)",
+              ".validate": "newData.hasChildren(['senderId','senderName','role','text','createdAt'])"
+            }
+          }
+        }
+      }
+    }
+  }
+}

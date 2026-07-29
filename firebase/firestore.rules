@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function profile() { return get(/databases/$(database)/documents/users/$(request.auth.uid)).data; }
+    function staff() { return signedIn() && profile().role in ['lecturer', 'admin']; }
+    match /users/{uid} {
+      allow create: if signedIn() && request.auth.uid == uid && request.resource.data.role == "student";
+      allow read: if signedIn() && (request.auth.uid == uid || staff());
+      allow update: if signedIn() && ((request.auth.uid == uid && request.resource.data.role == resource.data.role) || staff());
+    }
+    match /courses/{id} { allow read: if signedIn(); allow write: if staff(); }
+    match /modules/{id} { allow read: if signedIn(); allow write: if staff(); }
+    match /quiz/{id} { allow read: if signedIn(); allow write: if staff(); }
+    match /results/{id} { allow create: if signedIn() && request.resource.data.studentId == request.auth.uid; allow read: if signedIn() && (resource.data.studentId == request.auth.uid || staff()); }
+    match /announcement/{id} { allow read: if signedIn(); allow write: if staff(); }
+    match /chat/{id} { allow read, create: if signedIn(); allow update, delete: if staff(); }
+  }
+}

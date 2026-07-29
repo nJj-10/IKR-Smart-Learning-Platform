@@ -1,0 +1,5 @@
+import { useAuth } from "../contexts/AuthContext.jsx";
+import { getProgress } from "../services/dataService.js";
+import { MODULE_CATALOG } from "../data/moduleCatalog.js";
+import PageHeader from "../components/PageHeader.jsx";
+export default function Progress(){const{user}=useAuth();const p=getProgress(user.uid);return <><PageHeader eyebrow="Learning progress" title="Kemajuan pembelajaran" description="Topik yang ditandakan selesai disimpan mengikut pengguna."/><div className="grid gap-4 md:grid-cols-2">{MODULE_CATALOG.map(m=>{const done=(p[m.code]||[]).length;const pct=Math.round(done/m.topics.length*100);return <div className="panel p-5" key={m.code}><div className="flex justify-between"><div><div className="text-xs font-black text-tech-600">{m.code}</div><div className="mt-1 font-black">{m.title}</div></div><div className="text-xl font-black">{pct}%</div></div><div className="mt-4 h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-white/10"><div className="h-full bg-tech-600" style={{width:`${pct}%`}}/></div><div className="mt-2 text-xs text-slate-500">{done} daripada {m.topics.length} topik selesai</div></div>})}</div></>}

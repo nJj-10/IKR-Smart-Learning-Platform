@@ -1,0 +1,11 @@
+import "dotenv/config";
+import express from "express";
+import cors from "cors";
+import aiRouter from "./routes/aiRoutes.js";
+const app=express();
+app.use(cors({origin:process.env.CLIENT_ORIGIN?.split(',')||true}));
+app.use(express.json({limit:'1mb'}));
+app.get('/api/health',(_req,res)=>res.json({ok:true,service:'IKR Smart Learning API',provider:process.env.AI_PROVIDER||'local'}));
+app.use('/api/ai',aiRouter);
+app.use((err,_req,res,_next)=>{console.error(err);res.status(500).json({error:'Ralat pelayan.'})});
+const port=Number(process.env.PORT||4000);app.listen(port,()=>console.log(`IKR API berjalan pada http://localhost:${port}`));

@@ -1,0 +1,2 @@
+import Icon from "./Icon.jsx";
+export default function StatCard({icon,label,value,hint}) { return <div className="panel p-5"><div className="flex items-start justify-between"><div><div className="text-sm font-semibold text-slate-500 dark:text-slate-400">{label}</div><div className="mt-2 text-3xl font-black">{value}</div></div><div className="rounded-xl bg-tech-500/10 p-3 text-tech-600"><Icon name={icon}/></div></div>{hint&&<div className="mt-3 text-xs text-slate-500">{hint}</div>}</div>; }

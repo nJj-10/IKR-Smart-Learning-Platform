@@ -1,0 +1,11 @@
+import fs from "node:fs";
+import { createRequire } from "node:module";
+const requireFromBackend = createRequire(new URL("../backend/package.json", import.meta.url));
+const admin = requireFromBackend("firebase-admin");
+admin.initializeApp({ credential: admin.credential.applicationDefault() });
+const db = admin.firestore();
+const modules = JSON.parse(fs.readFileSync(new URL("../seed/modules.json", import.meta.url), "utf8"));
+const batch = db.batch();
+for (const module of modules) batch.set(db.collection("modules").doc(module.code), module, { merge: true });
+await batch.commit();
+console.log(`${modules.length} modul dimasukkan ke Firestore.`);
